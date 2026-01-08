@@ -1,0 +1,113 @@
+
+
+:root[theme="dark"]{
+    --bg-color: #16161D;
+    --txt-color: #fefefe;
+    --border-color: #9ed2fa; 
+}
+
+body{
+        background-color: white;
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        background-color: black;
+    }
+}
+
+p{
+    background-color: var(--bg-color);
+    border: 2px var(--bg-color) solid;
+}
+
+header{
+    background-color: var(--bg-color);
+}
+
+hr{
+    color: var(--border-color);
+}
+
+#radial_gradient{
+    height: 90px;
+    width: 300px;
+    background-image: radial-gradient(circle at top left, pink, magenta, red);
+}
+
+#radial_gradient{
+    height: 300px;
+}
+
+:where(#wi){
+    background-color: red;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --txt-color: #01142e;
+    --border-color: #fa9e9e;
+    color: orangered;
+    border: var(--border-color) 50px solid;
+    margin: 20px;
+}
+
+.pk-card{
+    width: 20em;
+    height: 35em;
+    background-image: linear-gradient(yellow, orange);
+
+    padding: 1em;
+
+    border: black solid;
+    border-radius: 1rem;
+    margin: 3px;
+    box-shadow: 5px, 5px, red;
+}
+
+#pk-title{
+    background-color: black;
+    color: white;
+    width: auto;
+    height: 3rem;
+    align-content: end;
+    font-family: sans-serif;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#pic{
+    height: 14rem;
+    width: auto;
+
+    border-radius: 5px;
+    border-left: 5px solid red;
+    border-right: 5px solid green;
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid blue;
+
+    align-self: center;
+}
+
+#movesgrid{
+    border: 0.75em solid transparent;
+    border-image:url(poke\ border.png) 30 round;
+
+    height: 10rem;
+    width: auto;
+    background-color: black;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-rows: 2;
+}
+
+#move{
+    color: black;
+    background-color: yellow;
+    height: 2em;
+    width: auto;
+    margin: 1em;
+    padding: 0.25em;
+}
