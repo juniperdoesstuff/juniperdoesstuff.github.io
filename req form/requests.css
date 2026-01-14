@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    background-color: lightblue;
+}
+
+fieldset{
+    display:flex;
+    flex-direction:column;
+    width:500px;
+}
+
+form{
+    justify-self: center;
+}
+
+input{
+    font-size: 1.2rem;
+}
+
+select{
+    font-size: 1.2rem;
+}
+
+#grade-radio{
+    display: flex;
+    flex-direction: row;
+}
+
+#submitbutton{
+    height:50px;
+    width:100px;
+    background-color:lightgray;
+    text-align:center;
+}

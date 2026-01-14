@@ -14,20 +14,44 @@
     </header>
 
     <form action="">
+        <fieldset id="personal">
+            <legend>Personal Info</legend>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name">
 
-        <label for="type">Request Type:</label>
-        <select name="type" id="type">
+        <label for="grade">Grade:</label>
+        <div id="grade-radio">
+        <label for="9"><input type="radio" name="grade" id="9">9th Grade</label>
+        <label for="10"><input type="radio" name="grade" id="10">10th Grade</label>
+        <label for="11"><input type="radio" name="grade" id="11">11th Grade</label>
+        <label for="12"><input type="radio" name="grade" id="12">12th Grade</label>
+        </div>
+        
+        </fieldset>
+        <fieldset id="app-info">
+            <legend>Application Info</legend>
+
+            <label for="type">Request Type:</label>
+            <select name="type" id="type">
             <option value="1">Councelor</option>
             <option value="2">Admin</option>
             <option value="3">Teacher</option>
             <option value="4">Security</option>
-        </select>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+            
+            <label for="time">Time: </label>
+            <input type="time" name="time" id="time">
+        </fieldset>
+        <div id="submitbutton">
+            submit
+        </div>
     </form>
 
     <p>
-        please dont actually answer this form
+        note: please dont actually answer this form
     </p>
 </body>
 <script src="requests.js"></script>
