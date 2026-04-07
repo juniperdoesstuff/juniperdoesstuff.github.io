@@ -1,0 +1,59 @@
+body{
+    background-color:navy;
+}
+
+.container{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.colorchange:hover{
+    background-color: red;
+}
+.box{
+    background-color:pink;
+    height:150px;
+    width:150px;
+}
+
+.rotate{
+    transition:transform 1s ease-in-out;
+    transform: rotate(45deg);
+}
+
+.scale:hover{
+    transition: transform 1s ease-in-out;
+    transform: scale(1.2);
+}
+
+#square{
+    height:150px;
+    width:150px;
+    background-color:white;
+}
+
+#circle{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    background-color:white;
+}
+
+#oval{
+    height:200px;
+    width:150px;
+    border-radius:50%;
+    background-color:white;
+}
+
+#triangle{
+    height:0px;
+    width:0px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid white;
+}

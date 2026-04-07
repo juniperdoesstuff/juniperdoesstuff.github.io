@@ -1,0 +1,32 @@
+body{
+    display:flex;
+    align-items: center;
+    height:100vh;
+    justify-content:center;
+    background-color:navy;
+}
+
+.box{
+    height: 150px;
+    width:150px;
+    background-color:pink;
+    position:absolute;
+}
+
+.move{
+    animation-name: movebox;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes movebox {
+    0%{left:1vw}
+    50%{left:90vw}
+    100%{left:1vw}
+}
+
+#btn, #pause{
+    margin-top:300px;
+}
