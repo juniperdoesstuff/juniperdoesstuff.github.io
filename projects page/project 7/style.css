@@ -1,0 +1,42 @@
+body{
+    background-color: navy;
+    display:flex;
+    height: 100vh;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#uptriangle{
+  width: 0; 
+  height: 0; 
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 130px solid pink;
+
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+#downtriangle{
+  width: 0; 
+  height: 0; 
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-top: 130px solid pink;
+
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(180deg)}
+    100%{transform: rotate(360deg)}
+}
