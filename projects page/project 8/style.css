@@ -1,0 +1,25 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    background-color: navy;
+}
+
+.square{
+    height: 150px;
+    width:150px;
+    background-color: pink;
+
+    animation-name: circle;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+    0%{border-radius: 0%;}
+    50%{border-radius: 50%;}
+    100%{border-radius: 0%;}
+}
