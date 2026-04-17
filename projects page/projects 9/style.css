@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: navy;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.shape {
+  width: 0;
+  height: 0;
+
+  animation-name: shapes;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes shapes {
+  0% {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid pink;
+    border-radius: 0%;
+  }
+
+  33% {
+    border-left: 75px solid pink;
+    border-right: 75px solid pink;
+    border-bottom: 150px solid pink;
+    border-radius: 0%;
+  }
+
+  66% {
+    border-left: 75px solid pink;
+    border-right: 75px solid pink;
+    border-bottom: 150px solid pink;
+    border-radius: 50%;
+  }
+
+  100% {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid pink;
+    border-radius: 0%;
+  }
+}
