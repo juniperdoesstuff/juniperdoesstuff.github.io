@@ -1,10 +1,14 @@
 <nav>
     <ul>
-        <li>
+        <li id="home">
             <a href="/index.html">
-                Home
+                <img id="logo" src="https://avatars.githubusercontent.com/u/236268114?v=4"
+                    alt="A black-and-white picture of a juniper tree.">
             </a>
         </li>
+    </ul>
+    <ul>
+        <li id="navtext">| MY STUFF |</li>
         <li>
             <a href='/projects page/projects.html'>
                 Projects
@@ -17,28 +21,48 @@
 </nav>
 
 <style>
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    #logo {
+        width: 100px;
+        border-radius: 0;
+    }
 
-ul li {
-  float: left;
-}
+    #home {
+        float: left;
+    }
 
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    #navtext {
+        float: none;
+        text-align: center;
+        color: var(--title-color);
+        font-size: 20px;
+    }
 
-ul li a:hover {
-  background-color: #111111;
-}
+    nav {
+        width: 100vw;
+        top: 0;
+        align-self: center;
+        position: sticky;
+    }
+
+    ul {
+        list-style-type: none;
+        vertical-align: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        background-color: #111111;
+    }
 </style>

@@ -37,19 +37,17 @@ ul li a:hover {
 }
 
 .projectlink:hover{
-    border:10px solid black;
-    border-radius:20px;
-    background-color:black;
     color:white;
+    background-color:black;
 }
 
 .container{
-    height:800px;
-    width:99vw;
+    height:1000px;
+    width: auto;
     background-color:gray;
     display:grid;
     border-radius:50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto auto;
     gap:1rem;
 }
 
