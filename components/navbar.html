@@ -1,33 +1,56 @@
 <nav>
-    <ul>
-        <li id="home">
-            <a href="/index.html">
-                <img id="logo" src="https://avatars.githubusercontent.com/u/236268114?v=4"
-                    alt="A black-and-white picture of a juniper tree.">
-            </a>
-        </li>
-    </ul>
-    <ul>
-        <li id="navtext">| MY STUFF |</li>
-        <li>
-            <a href='/projects page/projects.html'>
-                Projects
-            </a>
-        </li>
-        <li>
-            <a href="/contact page/contact.html">Contact</a>
-        </li>
-    </ul>
+    <a id="home" href="/index.html">
+        <img id="logo" src="https://avatars.githubusercontent.com/u/236268114?v=4"
+            alt="A black-and-white picture of a juniper tree.">
+    </a>
+
+    <div id="linkssection">
+        <h1 id="navheader">| MY STUFF |</h1>
+        <div id="links">
+            <a class="navlinks" href='/projects page/projects.html'> Projects </a>
+            <a class="navlinks" href="/contact page/contact.html">Contact</a>
+        </div>
+    </div>
 </nav>
 
 <style>
+    nav {
+        width: 100vw;
+        top: 0;
+        align-self: center;
+        position: sticky;
+        list-style-type: none;
+        vertical-align: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--bg-secondary);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav h1{
+        color: var(--title-color);
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+
     #logo {
-        width: 100px;
+        width: 120px;
         border-radius: 0;
     }
 
     #home {
         float: left;
+        display: block;
+        color: var(--title-color);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #home:hover {
+        background-color: var(--bg-primary);
     }
 
     #navtext {
@@ -37,32 +60,37 @@
         font-size: 20px;
     }
 
-    nav {
-        width: 100vw;
-        top: 0;
-        align-self: center;
-        position: sticky;
+    #links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
-    ul {
-        list-style-type: none;
-        vertical-align: auto;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333333;
-        font-family: Arial, Helvetica, sans-serif;
+    #linkssection {
+        display: flex;
+        flex-direction: column;
     }
 
-    ul li a {
+    .navlinks {
+        background-color: var(--bg-secondary);
         display: block;
-        color: white;
+        color: var(--title-color);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+
+        transition: background-color 0.25s;
+        transition: color 0.25s;
+        border: var(--title-color) 1px solid;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 20px;
     }
 
-    ul li a:hover {
-        background-color: #111111;
+    .navlinks:hover {
+        background-color: var(--title-color);
+        color: var(--bg-primary);
     }
 </style>
