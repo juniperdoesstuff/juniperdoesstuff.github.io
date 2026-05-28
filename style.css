@@ -9,16 +9,16 @@ body {
   align-items: center;
 }
 
-h1{
-  font-size:3rem;
+h1 {
+  font-size: 3rem;
 }
 
-nav h1{
-  font-size:2rem;
+nav h1 {
+  font-size: 2rem;
 }
 
-h2{
-  font-size:2rem;
+h2 {
+  font-size: 2rem;
 }
 
 h1,
@@ -42,4 +42,36 @@ p {
   height: 300px;
   width: 100vw;
   object-fit: cover;
+}
+
+#alert {
+  color: red;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input {
+  background-color: var(--bg-secondary);
+  border: 0px;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+}
+
+input {
+  transition: background-color 0.25s;
+  transition: color 0.25s;
+}
+
+#username:focus,
+#password:focus {
+  font-weight: bold;
+}
+
+input:hover,
+input:focus {
+  background-color: var(--title-color);
+  color: var(--bg-primary);
 }
